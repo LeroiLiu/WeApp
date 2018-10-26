@@ -1,0 +1,21 @@
+<view class='av_list' wx:for="{{show_av_lists}}" wx:key="" wx:for-index="show_av_lists_id" wx:for-item="show_av_lists_item">
+  <i-row>
+      <i-col span="22" offset="1" i-class="col-class">
+          <i-divider height="40" size="20" content="　{{show_av_lists_item.title}}　" color="#f759ab" lineColor="#f759ab"></i-divider>
+      </i-col>
+  </i-row>
+  <i-row>
+      <i-col span="22" offset="1" i-class="col-class">
+          <view class='av_description'><text>{{show_av_lists_item.description}}</text></view>
+      </i-col>
+  </i-row>
+  <i-row>
+      <i-col span="20" offset="2" i-class="col-class">
+          <video src='{{show_av_lists_item.url}}' autoplay='{{show_av_lists_item.autoplay}}'></video>
+      </i-col>
+  </i-row>
+</view>
+
+<i-divider color="#f759ab" lineColor="#f759ab">加载已经完成,没有其他数据</i-divider>
+<import src="../../templates/templates.wxml"/>
+<template is="tabbar" data="{{current:current}}"></template>

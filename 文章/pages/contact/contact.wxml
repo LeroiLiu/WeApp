@@ -1,0 +1,61 @@
+<!--pages/contact/contact.wxml-->
+<i-row>
+    <i-col span="22" offset="1" i-class="col-class">
+        <i-divider content="　联系方式　" color="#f759ab" lineColor="#f759ab"></i-divider>
+        <view><text></text></view>
+    </i-col>
+</i-row>
+<i-row>
+    <i-col span="14" offset="5" i-class="col-class table">
+        <i-button bind:click="copyWeChat" type="info" shape="circle" size="small">点击拷贝微信</i-button>
+    </i-col>
+</i-row>
+<i-row>
+    <i-col span="14" offset="5" i-class="col-class table">
+        <i-button bind:click="dialing" type="info" shape="circle" size="small">点击拨打电话</i-button>
+    </i-col>
+</i-row>
+<i-row>
+    <i-col span="14" offset="5" i-class="col-class table">
+        <i-button bind:click="addPhoneContact" type="info" shape="circle" size="small">点击添加通讯录</i-button>
+    </i-col>
+</i-row>
+
+<i-row>
+    <i-col span="22" offset="1" i-class="col-class">
+        <i-divider content="　赞助支持　" color="#f759ab" lineColor="#f759ab"></i-divider>
+        <view><text></text></view>
+    </i-col>
+</i-row>
+<i-row>
+    <i-col span="14" offset="5" i-class="col-class table">
+        <i-button open-type="share" type="info" shape="circle" size="small">感谢分享</i-button>
+    </i-col>
+    <i-col span="14" offset="5" i-class="col-class table">
+        <i-button bind:click="copyWeChat" type="info" shape="circle" size="small">赞助支持</i-button>
+    </i-col>
+    <i-col span="20" offset="2" i-class="col-class table">
+
+        <i-row>
+            <i-col span="2" i-class="col-class">1、</i-col>
+            <i-col span="22" i-class="col-class">你好你啊年嗲死你第三方的嗲死你第三方的嗲死你第三方的嗲死你第三方的嗲死你第三方的时空裂缝</i-col>
+        </i-row>
+        <i-row>
+            <i-col span="2" i-class="col-class">2、</i-col>
+            <i-col span="22" i-class="col-class">你好你啊年嗲死嗲死你第三方的嗲死你第三方的嗲死你第三方的嗲死你第三方的时空裂缝</i-col>
+        </i-row>
+        <i-row>
+            <i-col span="2" i-class="col-class">3、</i-col>
+            <i-col span="22" i-class="col-class">你好你啊年嗲死你嗲死你第三方的嗲死你第三方的嗲死你第三方的嗲死你第三方的第三方的时空裂缝</i-col>
+        </i-row>
+        <i-row>
+            <i-col span="2" i-class="col-class">4、</i-col>
+            <i-col span="22" i-class="col-class">你好你啊年嗲死你嗲死你第三方的嗲死你第三方的嗲死你第三方的嗲死你第三方的第三方的时空裂缝</i-col>
+        </i-row>
+
+    </i-col>
+</i-row>
+
+<i-divider color="#f759ab" lineColor="#f759ab">加载已经完成,没有其他数据</i-divider>
+<import src="../../templates/templates.wxml"/>
+<template is="tabbar" data="{{current:current}}"></template>

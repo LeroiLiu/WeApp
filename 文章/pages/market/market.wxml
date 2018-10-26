@@ -1,0 +1,28 @@
+<!--pages/market/market.wxml-->
+<i-row>
+    <i-col span="22" offset="1" i-class="col-class">
+        <i-divider height="40" size="15" content="　服务机器人集成　" color="#f759ab" lineColor="#f759ab"></i-divider>
+        <view><text>　　多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事</text></view>
+    </i-col>
+    <i-col span="22" offset="1" i-class="col-class">
+        <i-divider height="40" size="15" content="　ROS机器人研发　" color="#f759ab" lineColor="#f759ab"></i-divider>
+        <view><text>　　多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事</text></view>
+    </i-col>
+    <i-col span="22" offset="1" i-class="col-class">
+        <i-divider height="40" size="15" content="　ROS机器人教学　" color="#f759ab" lineColor="#f759ab"></i-divider>
+        <view><text>　　多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事</text></view>
+    </i-col>
+    <i-col span="22" offset="1" i-class="col-class">
+        <i-divider height="40" size="15" content="　智能仓储　" color="#f759ab" lineColor="#f759ab"></i-divider>
+        <view><text>　　多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事</text></view>
+    </i-col>
+    <i-col span="22" offset="1" i-class="col-class">
+        <i-divider height="40" size="15" content="　智能仓储　" color="#f759ab" lineColor="#f759ab"></i-divider>
+        <view><text>　　多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事多大点儿的事</text></view>
+    </i-col>
+</i-row>
+
+
+<i-divider color="#f759ab" lineColor="#f759ab">加载已经完成,没有其他数据</i-divider>
+<import src="../../templates/templates.wxml"/>
+<template is="tabbar" data="{{current:current}}"></template>

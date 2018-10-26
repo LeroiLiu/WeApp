@@ -1,0 +1,2 @@
+<!--pages/index/index.wxml-->
+<i-calendar selectedDate="2014-08-07" endDate="2014-08-20" startDate="2014-08-07"></i-calendar>

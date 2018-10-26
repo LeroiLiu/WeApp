@@ -1,0 +1,21 @@
+/* pages/competitor/competitor.wxss */
+page{
+  font-size: 30rpx;
+  line-height: 50rpx;
+  color: #80848f;
+  margin-bottom: 30rpx;
+}
+
+.table{
+  border: solid 2rpx #2d8cf0;
+  text-align: center;
+}
+
+.image{
+  height: 200rpx;
+}
+image{
+  width: 180rpx;
+  height:180rpx;
+}
+

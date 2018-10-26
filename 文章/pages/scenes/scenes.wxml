@@ -1,0 +1,13 @@
+<!--pages/scenes/scenes.wxml-->
+<i-row>
+    <view wx:for="{{scenes}}" wx:key="scenes_key" wx:for-index="scenes_index" wx:for-item="scenes_item">
+      <i-col span="22" offset="1" i-class="col-class">
+          <i-divider height="40" size="15" content="　{{scenes_item.title}}　" color="#f759ab" lineColor="#f759ab"></i-divider>
+          <view><text>　　{{scenes_item.description}}</text></view>
+      </i-col>
+    </view>
+</i-row>
+
+<i-divider color="#f759ab" lineColor="#f759ab">加载已经完成,没有其他数据</i-divider>
+<import src="../../templates/templates.wxml"/>
+<template is="tabbar" data="{{current:current}}"></template>

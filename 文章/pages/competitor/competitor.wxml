@@ -1,0 +1,71 @@
+<!--pages/competitor/competitor.wxml-->
+<i-row>
+
+
+    <view wx:for="{{competitors}}" wx:key="competitors_key" wx:for-index="competitors_index" wx:for-item="competitors_item">
+      <i-col span="22" offset="1" i-class="col-class">
+      <i-divider content="　竞品 {{competitors_item['产品'][1]}}　" color="#f759ab" lineColor="#f759ab"></i-divider>
+      <view wx:for="{{competitors_item}}" wx:key="competitor_key" wx:for-index="competitor_index" wx:for-item="competitor_item">
+        <view wx:if="{{competitor_index=='图片'}}">
+          <i-row>
+            <i-col span="6" i-class="col-class table image">{{competitor_index}}</i-col>
+            <i-col span="9" i-class="col-class table image"><image src='{{competitor_item[0]}}'></image></i-col>
+            <i-col span="9" i-class="col-class table image"><image src='{{competitor_item[1]}}'></image></i-col>
+          </i-row>
+        </view>
+        <view wx:elif="{{competitor_index=='对比'}}">
+          <i-row>
+              <i-col span="24" i-class="col-class table">{{competitor_item}}</i-col>
+          </i-row>
+        </view>
+        <view wx:else>
+            <i-row>
+              <i-col span="6" i-class="col-class table">{{competitor_index}}</i-col>
+              <i-col span="9" i-class="col-class table">{{competitor_item[0]}}</i-col>
+              <i-col span="9" i-class="col-class table">{{competitor_item[1]}}</i-col>
+            </i-row>
+        </view>
+      </view>
+      </i-col>
+    </view>
+
+   <!-- i-col span="22" offset="1" i-class="col-class">
+    <i-divider content="　竞品一 Dashgo　" color="#f759ab" lineColor="#f759ab"></i-divider>
+
+        <i-row>
+          <i-col span="6" i-class="col-class table">产品</i-col>
+          <i-col span="9" i-class="col-class table">DashGo</i-col>
+          <i-col span="9" i-class="col-class table">TMROB</i-col>
+        </i-row>
+        <i-row>
+          <i-col span="6" i-class="col-class table image">图片</i-col>
+          <i-col span="9" i-class="col-class table image"><image src='../../image/comp.jpg'></image></i-col>
+          <i-col span="9" i-class="col-class table image"><image src='../../image/comp.jpg'></image></i-col>
+        </i-row>
+        <i-row>
+          <i-col span="6" i-class="col-class table">整体尺寸</i-col>
+          <i-col span="9" i-class="col-class table">406*210</i-col>
+          <i-col span="9" i-class="col-class table">406*211</i-col>
+        </i-row>
+        <i-row>
+          <i-col span="6" i-class="col-class table">轮子数量</i-col>
+          <i-col span="9" i-class="col-class table">4</i-col>
+          <i-col span="9" i-class="col-class table">3</i-col>
+        </i-row>
+        <i-row>
+          <i-col span="6" i-class="col-class table">悬空高度</i-col>
+          <i-col span="9" i-class="col-class table">40</i-col>
+          <i-col span="9" i-class="col-class table">53</i-col>
+        </i-row>
+        <i-row>
+          <i-col span="24" i-class="col-class table">悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度悬空高度</i-col>
+        </i-row>
+    </i-col -->
+
+</i-row>
+
+
+
+<i-divider color="#f759ab" lineColor="#f759ab">加载已经完成,没有其他数据</i-divider>
+<import src="../../templates/templates.wxml"/>
+<template is="tabbar" data="{{current:current}}"></template>
